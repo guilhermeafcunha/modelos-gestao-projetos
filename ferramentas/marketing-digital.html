@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canvas de Marketing Digital</title>
+<meta name="description" content="Canvas interativo para planejar a estratégia de marketing digital: persona, canais, conteúdo, funil e métricas.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Crect x='7' y='7' width='8' height='8' rx='2' fill='%23fde68a'/%3E%3Crect x='17' y='7' width='8' height='8' rx='2' fill='%23bfdbfe'/%3E%3Crect x='7' y='17' width='18' height='8' rx='2' fill='%23bbf7d0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tools.css">
+<script src="assets/ui.js"></script>
+</head>
+<body>
+<script>
+window.CANVAS = {
+  id: 'mkt', title: 'Canvas de Marketing Digital', subtitle: 'Persona · canais · conteúdo · funil · métricas',
+  areas: ['obj obj per per vp vp', 'can can con con bm bm', 'h3 h3 h3 h3 h3 h3', 'atr atr cnv cnv ret ret', 'kpi kpi orc orc ferr ferr'],
+  rows: 'minmax(160px,1fr) minmax(160px,1fr) auto minmax(160px,1fr) minmax(150px,1fr)',
+  blocks: [
+    { id: 'obj', t: 'Objetivos e OKRs', i: '🎯', c: '#0d9488', h: 'O que o marketing precisa entregar? Ex.: 300 leads qualificados por mês até dezembro.' },
+    { id: 'per', t: 'Persona / público', i: '🧑', c: '#db2777', h: 'Quem é, o que faz, onde se informa, quais dores e objeções tem?' },
+    { id: 'vp', t: 'Proposta de valor e mensagem', i: '💎', c: '#7c3aed', h: 'Mensagem central, tom de voz e diferenciais.' },
+    { id: 'can', t: 'Canais (próprios · pagos · ganhos)', i: '📡', c: '#2563eb', h: 'Site, blog, e-mail, redes sociais, anúncios de busca e redes, imprensa, parcerias...' },
+    { id: 'con', t: 'Conteúdo', i: '✍️', c: '#0284c7', h: 'Pilares editoriais, formatos (vídeo, carrossel, artigo) e frequência.' },
+    { id: 'bm', t: 'Concorrentes e benchmark', i: '🔍', c: '#475569', h: 'Quem disputa a atenção da persona? O que fazem bem?' },
+    { id: 'h3', label: true, t: 'Funil · jornada do cliente →', c: '#d97706' },
+    { id: 'atr', t: '1 · Atração (topo)', i: '🧲', c: '#d97706', h: 'Como gerar tráfego e reconhecimento? SEO, anúncios, redes sociais.' },
+    { id: 'cnv', t: '2 · Conversão (meio e fundo)', i: '🔁', c: '#ea580c', h: 'Iscas digitais, landing pages, nutrição por e-mail, oferta, CTA.' },
+    { id: 'ret', t: '3 · Retenção e indicação', i: '❤️', c: '#dc2626', h: 'Onboarding, comunidade, pós-venda, programa de indicação.' },
+    { id: 'kpi', t: 'Métricas e KPIs', i: '📊', c: '#16a34a', h: 'CAC, LTV, CTR, CPL, taxa de conversão, ROAS, churn...' },
+    { id: 'orc', t: 'Orçamento', i: '💰', c: '#ca8a04', h: 'Investimento por canal e por mês.' },
+    { id: 'ferr', t: 'Ferramentas e martech', i: '🧰', c: '#64748b', h: 'CRM, automação de marketing, analytics, gestão de redes, IA generativa...' }
+  ],
+  example: {
+    project: 'Curso online de Lean Manufacturing',
+    notes: {
+      obj: ['O: Ser referência em Lean para supervisores', 'KR1: 2.000 leads por trimestre', 'KR2: 150 matrículas por trimestre', 'KR3: CAC abaixo de R$ 180'],
+      per: ['Supervisor de produção, 28 a 40 anos', 'Quer crescer na carreira', 'Pouco tempo para estudar', 'Objeção: “teoria não funciona na minha fábrica”'],
+      vp: ['Lean aplicado em 8 semanas, com casos reais de fábricas brasileiras', 'Tom: prático e direto'],
+      can: ['Próprios: blog, newsletter, YouTube', 'Pagos: anúncios no LinkedIn e no Google', 'Ganhos: parceria com associações industriais'],
+      con: ['Pilar 1: ferramentas Lean na prática', 'Pilar 2: histórias de kaizen', 'Pilar 3: carreira na indústria', 'Vídeos curtos semanais + 1 artigo'],
+      bm: ['Cursos de universidades corporativas', 'Criadores de conteúdo sobre Lean no LinkedIn'],
+      atr: ['SEO: “o que é OEE”, “5S na prática”', 'Vídeos curtos do gemba', 'Anúncios segmentados por cargo de supervisão'],
+      cnv: ['E-book + planilha de OEE grátis', 'Sequência de 5 e-mails', 'Aula ao vivo com oferta'],
+      ret: ['Comunidade de alunos', 'Certificado compartilhável', 'Indique e ganhe um módulo bônus'],
+      kpi: ['CPL', 'Taxa lead → venda', 'CAC e LTV', 'NPS dos alunos'],
+      orc: ['R$ 6 mil/mês em mídia paga', 'R$ 2 mil/mês em produção de conteúdo'],
+      ferr: ['CRM com automação de e-mail', 'Google Analytics 4', 'Editor de design', 'Plataforma EAD']
+    }
+  }
+};
+</script>
+<script src="assets/canvas.js"></script>
+</body>
+</html>

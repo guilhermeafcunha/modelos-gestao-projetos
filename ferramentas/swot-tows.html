@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Análise SWOT e TOWS</title>
+<meta name="description" content="Matriz SWOT (FOFA) interativa com cruzamento TOWS para gerar estratégias.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Crect x='7' y='7' width='8' height='8' rx='2' fill='%23fde68a'/%3E%3Crect x='17' y='7' width='8' height='8' rx='2' fill='%23bfdbfe'/%3E%3Crect x='7' y='17' width='18' height='8' rx='2' fill='%23bbf7d0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tools.css">
+<script src="assets/ui.js"></script>
+</head>
+<body>
+<script>
+window.CANVAS = {
+  id: 'swot', title: 'Análise SWOT + TOWS', subtitle: 'Forças · Fraquezas · Oportunidades · Ameaças → estratégias cruzadas',
+  areas: ['hi hi hi hi', 's s w w', 'o o t t', 'hx hx hx hx', 'so st wo wt'],
+  rows: 'auto minmax(170px,1fr) minmax(170px,1fr) auto minmax(160px,1fr)',
+  blocks: [
+    { id: 'hi', label: true, t: 'Diagnóstico · interno (em cima) e externo (embaixo)', c: '#0d9488' },
+    { id: 's', t: 'Forças (Strengths)', i: '💪', c: '#16a34a', n: '#bbf7d0', h: 'Fatores internos positivos: competências, recursos, vantagens.' },
+    { id: 'w', t: 'Fraquezas (Weaknesses)', i: '🧱', c: '#dc2626', n: '#fbcfe8', h: 'Fatores internos negativos: lacunas, limitações, custos altos.' },
+    { id: 'o', t: 'Oportunidades (Opportunities)', i: '🚀', c: '#2563eb', n: '#bfdbfe', h: 'Fatores externos positivos: mercado, tecnologia, regulação, tendências.' },
+    { id: 't', t: 'Ameaças (Threats)', i: '🌩️', c: '#d97706', n: '#fed7aa', h: 'Fatores externos negativos: concorrência, crise, mudanças legais.' },
+    { id: 'hx', label: true, t: 'Matriz TOWS · estratégias cruzadas', c: '#7c3aed' },
+    { id: 'so', t: 'FO · Ofensivas (Forças × Oportunidades)', i: '⚔️', c: '#16a34a', n: '#ddd6fe', h: 'Use as forças para aproveitar as oportunidades.' },
+    { id: 'st', t: 'FA · Confronto (Forças × Ameaças)', i: '🛡️', c: '#0284c7', n: '#ddd6fe', h: 'Use as forças para reduzir as ameaças.' },
+    { id: 'wo', t: 'FrO · Reforço (Fraquezas × Oportunidades)', i: '🔧', c: '#d97706', n: '#ddd6fe', h: 'Supere as fraquezas aproveitando as oportunidades.' },
+    { id: 'wt', t: 'FrA · Defensivas (Fraquezas × Ameaças)', i: '🚧', c: '#dc2626', n: '#ddd6fe', h: 'Minimize as fraquezas e evite as ameaças.' }
+  ],
+  example: {
+    project: 'Metalúrgica Exemplo S.A.',
+    notes: {
+      s: ['Equipe técnica experiente', 'Certificação IATF 16949', 'Boa reputação de qualidade'],
+      w: ['OEE baixo (58%)', 'Dependência de 2 grandes clientes', 'Pouca digitalização'],
+      o: ['Nearshoring de cadeias automotivas', 'Linhas de crédito para Indústria 4.0', 'Demanda de veículos elétricos'],
+      t: ['Concorrência asiática', 'Alta do preço do aço', 'Falta de mão de obra qualificada'],
+      so: ['Usar a certificação para prospectar montadoras que estão trazendo produção para perto'],
+      st: ['Contratos de longo prazo com indexação do aço'],
+      wo: ['Financiar MES e TPM com crédito de Indústria 4.0 para elevar o OEE'],
+      wt: ['Diversificar a carteira para reduzir dependência e risco cambial']
+    }
+  }
+};
+</script>
+<script src="assets/canvas.js"></script>
+</body>
+</html>

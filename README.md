@@ -16,6 +16,26 @@ Kit de modelos para **Engenheiros de Produção** e **Gerentes de Projetos**, al
 
 ---
 
+## 🧰 Ferramentas interativas
+
+Ferramentas que rodam no navegador, sem cadastro: **https://guilhermeafcunha.github.io/modelos-gestao-projetos/ferramentas/**
+
+| Ferramenta | Para quê |
+|---|---|
+| [Mapa Estratégico](ferramentas/mapa-estrategico.html) | Objetivos nas 4 perspectivas, ligados por causa e efeito |
+| [Balanced Scorecard](ferramentas/bsc.html) | Indicadores, metas, farol e iniciativas (importa o mapa) |
+| [SWOT + TOWS](ferramentas/swot-tows.html) | Diagnóstico e estratégias cruzadas |
+| [Business Model Canvas](ferramentas/business-model-canvas.html) | Os 9 blocos do modelo de negócio |
+| [Canvas de Proposta de Valor](ferramentas/proposta-de-valor.html) | Encaixe entre a oferta e as tarefas, dores e ganhos do cliente |
+| [Lean Canvas](ferramentas/lean-canvas.html) | Validação de ideias e startups |
+| [Canvas de Marketing Digital](ferramentas/marketing-digital.html) | Persona, canais, conteúdo, funil e KPIs |
+| [Mapa de Empatia](ferramentas/mapa-de-empatia.html) | Entender clientes e stakeholders |
+| [Project Model Canvas](ferramentas/project-model-canvas.html) | Conceber o projeto em uma página (base do TAP) |
+
+Salvam sozinhas no navegador, exportam em JSON e Markdown e imprimem em PDF.
+
+---
+
 ## Estrutura e catálogo
 
 🌐 **Navegar como site:** https://guilhermeafcunha.github.io/modelos-gestao-projetos/

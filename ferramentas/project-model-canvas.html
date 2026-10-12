@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Model Canvas</title>
+<meta name="description" content="Project Model Canvas interativo para conceber projetos em uma página.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Crect x='7' y='7' width='8' height='8' rx='2' fill='%23fde68a'/%3E%3Crect x='17' y='7' width='8' height='8' rx='2' fill='%23bfdbfe'/%3E%3Crect x='7' y='17' width='18' height='8' rx='2' fill='%23bbf7d0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tools.css">
+<script src="assets/ui.js"></script>
+</head>
+<body>
+<script>
+window.CANVAS = {
+  id: 'pmc', title: 'Project Model Canvas', subtitle: 'Finocchio · conceber o projeto em uma página (gera o TAP)',
+  areas: ['g1 g2 g3 g4 g5', 'ju pr st pm ri', 'ju pr st pm ri', 'ob pr st en li', 'ob rq eq en li', 'be rq eq rs cu', 'be rq eq rs cu'],
+  rows: 'auto repeat(6, minmax(78px, 1fr))',
+  blocks: [
+    { id: 'g1', label: true, t: 'Por quê?', c: '#0d9488' },
+    { id: 'ju', t: '1 · Justificativas', i: '📌', c: '#0d9488', h: 'Qual é o problema ou oportunidade hoje (passado)?' },
+    { id: 'ob', t: '2 · Objetivo SMART', i: '🎯', c: '#0d9488', h: 'Específico, mensurável, atingível, relevante, com prazo.' },
+    { id: 'be', t: '3 · Benefícios', i: '🌱', c: '#0d9488', h: 'O que melhora depois do projeto (futuro)?' },
+    { id: 'g2', label: true, t: 'O quê?', c: '#2563eb' },
+    { id: 'pr', t: '4 · Produto', i: '📦', c: '#2563eb', h: 'Qual é o resultado tangível do projeto?' },
+    { id: 'rq', t: '5 · Requisitos', i: '📋', c: '#2563eb', h: 'Que características o produto precisa ter?' },
+    { id: 'g3', label: true, t: 'Quem?', c: '#db2777' },
+    { id: 'st', t: '6 · Stakeholders externos e fatores externos', i: '🌐', c: '#db2777', h: 'Quem é afetado ou influencia o projeto de fora? Que fatores fogem ao controle?' },
+    { id: 'eq', t: '7 · Equipe', i: '👥', c: '#db2777', h: 'Quem faz o trabalho? Papéis-chave.' },
+    { id: 'g4', label: true, t: 'Como?', c: '#d97706' },
+    { id: 'rs', t: '8 · Restrições', i: '⛔', c: '#d97706', h: 'O que limita a liberdade da equipe (prazo, orçamento, normas)?' },
+    { id: 'pm', t: '9 · Premissas', i: '🤔', c: '#d97706', h: 'O que estamos assumindo como verdade sem poder garantir?' },
+    { id: 'en', t: '10 · Grupos de entregas', i: '🧩', c: '#d97706', h: 'Os grandes blocos de trabalho (base da EAP).' },
+    { id: 'g5', label: true, t: 'Quando e quanto?', c: '#7c3aed' },
+    { id: 'ri', t: '11 · Riscos', i: '⚠️', c: '#7c3aed', h: 'O que pode dar errado (ou certo)? Ligue cada premissa a um risco.' },
+    { id: 'li', t: '12 · Linha do tempo', i: '🗓️', c: '#7c3aed', h: 'Marcos e datas de cada entrega.' },
+    { id: 'cu', t: '13 · Custos', i: '💰', c: '#7c3aed', h: 'Custo estimado por entrega.' }
+  ],
+  example: {
+    project: 'Implantação de TPM na Linha 3',
+    notes: {
+      ju: ['OEE da linha 3 em 58%', 'Paradas por quebra = 12% do tempo', 'Atrasos de entrega ao cliente A'],
+      ob: ['Elevar o OEE da linha 3 de 58% para 72% até dez/2027, com orçamento de R$ 380 mil'],
+      be: ['Mais capacidade sem novas máquinas', 'Melhor OTIF', 'Operadores donos dos equipamentos'],
+      pr: ['Pilares de manutenção autônoma e planejada implantados na linha 3'],
+      rq: ['Padrões de limpeza e inspeção', 'Plano de manutenção preventiva no ERP', 'Indicadores MTBF e MTTR no painel'],
+      st: ['Fornecedor do equipamento', 'Cliente A (auditoria)', 'Sindicato', 'Sazonalidade da demanda'],
+      eq: ['GP: Eng. de Manutenção', 'Facilitador TPM', 'Líderes de turno', 'Planejador de manutenção'],
+      pm: ['Linha poderá parar 4 h/semana para TPM', 'Peças de reposição chegam em 15 dias'],
+      en: ['Diagnóstico e linha de base', 'Treinamento', 'Manutenção autônoma (passos 1–3)', 'Manutenção planejada', 'Estabilização'],
+      rs: ['Sem aumento de quadro', 'Orçamento máximo de R$ 380 mil', 'Respeitar a NR-12'],
+      ri: ['Demanda alta impedir paradas para TPM', 'Resistência dos operadores', 'Atraso de peças importadas'],
+      li: ['Kickoff: fev', 'Treinamento: mar–abr', 'MA passos 1–3: mai–ago', 'Estabilização: dez'],
+      cu: ['Treinamento: R$ 60 mil', 'Peças e retrofit: R$ 250 mil', 'Consultoria: R$ 50 mil', 'Reserva: R$ 20 mil']
+    }
+  }
+};
+</script>
+<script src="assets/canvas.js"></script>
+</body>
+</html>

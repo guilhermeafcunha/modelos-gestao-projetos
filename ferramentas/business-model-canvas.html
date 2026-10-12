@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Model Canvas</title>
+<meta name="description" content="Business Model Canvas interativo com notas adesivas, exportação e impressão.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Crect x='7' y='7' width='8' height='8' rx='2' fill='%23fde68a'/%3E%3Crect x='17' y='7' width='8' height='8' rx='2' fill='%23bfdbfe'/%3E%3Crect x='7' y='17' width='18' height='8' rx='2' fill='%23bbf7d0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tools.css">
+<script src="assets/ui.js"></script>
+</head>
+<body>
+<script>
+window.CANVAS = {
+  id: 'bmc', title: 'Business Model Canvas', subtitle: 'Osterwalder & Pigneur · 9 blocos do modelo de negócio',
+  areas: ['kp kp ka ka vp vp cr cr cs cs', 'kp kp kr kr vp vp ch ch cs cs', 'co co co co co rv rv rv rv rv'],
+  rows: 'minmax(170px,1fr) minmax(170px,1fr) minmax(140px,.8fr)',
+  blocks: [
+    { id: 'kp', t: 'Parcerias principais', i: '🤝', c: '#7c3aed', h: 'Quem são os parceiros e fornecedores-chave? Que recursos ou atividades eles fornecem?' },
+    { id: 'ka', t: 'Atividades-chave', i: '⚙️', c: '#2563eb', h: 'O que precisamos fazer muito bem para entregar a proposta de valor?' },
+    { id: 'kr', t: 'Recursos principais', i: '🏭', c: '#0284c7', h: 'Recursos físicos, intelectuais, humanos e financeiros essenciais.' },
+    { id: 'vp', t: 'Proposta de valor', i: '💎', c: '#db2777', h: 'Que problema resolvemos? Que necessidade satisfazemos? Por que nos escolhem?' },
+    { id: 'cr', t: 'Relacionamento com clientes', i: '💬', c: '#ea580c', h: 'Que tipo de relação cada segmento espera? (pessoal, self-service, comunidade...)' },
+    { id: 'ch', t: 'Canais', i: '📣', c: '#d97706', h: 'Como alcançamos, vendemos e entregamos valor aos clientes?' },
+    { id: 'cs', t: 'Segmentos de clientes', i: '👥', c: '#16a34a', h: 'Para quem criamos valor? Quem são os clientes mais importantes?' },
+    { id: 'co', t: 'Estrutura de custos', i: '💸', c: '#dc2626', h: 'Quais são os custos mais importantes? Fixos ou variáveis? Economia de escala?' },
+    { id: 'rv', t: 'Fontes de receita', i: '💰', c: '#0d9488', h: 'Por quais valores os clientes pagam? Como pagam? (assinatura, venda, licença...)' }
+  ],
+  example: {
+    project: 'Manutenção preditiva como serviço (IoT)',
+    notes: {
+      kp: ['Fabricantes de sensores de vibração', 'Provedor de nuvem', 'Integradores de automação industrial'],
+      ka: ['Desenvolver modelos de detecção de falhas', 'Instalação e calibração de sensores', 'Suporte técnico 24/7'],
+      kr: ['Plataforma de análise de dados', 'Engenheiros de confiabilidade', 'Base histórica de falhas'],
+      vp: ['Reduzir paradas não planejadas em até 30%', 'Alerta antes da quebra', 'Sem investimento inicial em hardware'],
+      cr: ['Gerente de conta dedicado', 'Relatórios mensais de confiabilidade', 'Comunidade de usuários'],
+      ch: ['Vendas diretas B2B', 'Feiras industriais', 'Parceiros integradores', 'Webinars técnicos'],
+      cs: ['Indústrias de processo contínuo', 'Mineradoras', 'Médias metalúrgicas com mais de 50 máquinas'],
+      co: ['Hardware (sensores)', 'Infraestrutura de nuvem', 'Equipe de engenharia', 'Comissões de parceiros'],
+      rv: ['Assinatura mensal por equipamento monitorado', 'Taxa de implantação', 'Consultoria de confiabilidade (RCM)']
+    }
+  }
+};
+</script>
+<script src="assets/canvas.js"></script>
+</body>
+</html>

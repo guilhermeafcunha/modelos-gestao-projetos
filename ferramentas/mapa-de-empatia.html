@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa de Empatia</title>
+<meta name="description" content="Mapa de empatia interativo para entender clientes, usuários e stakeholders.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Crect x='7' y='7' width='8' height='8' rx='2' fill='%23fde68a'/%3E%3Crect x='17' y='7' width='8' height='8' rx='2' fill='%23bfdbfe'/%3E%3Crect x='7' y='17' width='18' height='8' rx='2' fill='%23bbf7d0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tools.css">
+<script src="assets/ui.js"></script>
+</head>
+<body>
+<script>
+window.CANVAS = {
+  id: 'empatia', title: 'Mapa de Empatia', subtitle: 'XPLANE / Dave Gray · entender a pessoa antes de propor soluções',
+  areas: ['quem quem fazer fazer', 've pensa pensa ouve', 've diz faz ouve', 'dores dores ganhos ganhos'],
+  rows: 'minmax(140px,.8fr) minmax(160px,1fr) minmax(160px,1fr) minmax(150px,.9fr)',
+  blocks: [
+    { id: 'quem', t: 'Com quem estamos sendo empáticos?', i: '🧑', c: '#0d9488', h: 'Quem é a pessoa? Qual é a situação e o papel dela?' },
+    { id: 'fazer', t: 'O que ela precisa fazer?', i: '✅', c: '#2563eb', h: 'Que tarefas ou decisões precisa realizar? Como saberá que teve sucesso?' },
+    { id: 've', t: 'O que ela vê?', i: '👀', c: '#0284c7', h: 'No ambiente, no mercado, o que os outros fazem, o que ela lê.' },
+    { id: 'pensa', t: 'O que ela pensa e sente?', i: '💭', c: '#7c3aed', h: 'Preocupações, aspirações, medos, o que realmente importa.' },
+    { id: 'ouve', t: 'O que ela ouve?', i: '👂', c: '#db2777', h: 'De chefes, colegas, amigos, influenciadores, canais.' },
+    { id: 'diz', t: 'O que ela diz?', i: '🗣️', c: '#ea580c', h: 'Frases que costuma dizer; o que fala em público.' },
+    { id: 'faz', t: 'O que ela faz?', i: '🏃', c: '#d97706', h: 'Comportamentos observáveis e hábitos.' },
+    { id: 'dores', t: 'Dores', i: '⚡', c: '#dc2626', n: '#fbcfe8', h: 'Medos, frustrações e obstáculos.' },
+    { id: 'ganhos', t: 'Ganhos', i: '🌟', c: '#16a34a', n: '#bbf7d0', h: 'Desejos, necessidades, medidas de sucesso.' }
+  ],
+  example: {
+    project: 'Persona: Carlos, supervisor de produção',
+    notes: {
+      quem: ['Carlos, 34 anos, supervisor do 2º turno de uma metalúrgica', 'Técnico em mecânica, cursando Eng. de Produção'],
+      fazer: ['Bater a meta de produção do turno', 'Reportar paradas e refugo', 'Treinar operadores novos'],
+      ve: ['Quadro de produção desatualizado', 'Máquinas antigas', 'Colegas promovidos que fizeram pós'],
+      pensa: ['“Se eu tivesse dados, provaria que o problema é a manutenção”', 'Medo de ser cobrado por algo que não controla'],
+      ouve: ['Gerente: “precisamos de mais eficiência”', 'Operadores: “essa máquina vive quebrando”'],
+      diz: ['“Sempre fizemos assim”', '“Não tenho tempo para reunião”'],
+      faz: ['Anota paradas em papel', 'Resolve problemas na hora, sem registrar a causa', 'Estuda à noite'],
+      dores: ['Falta de tempo', 'Dados pouco confiáveis', 'Pressão da gerência'],
+      ganhos: ['Reconhecimento e promoção', 'Turno estável e previsível', 'Equipe engajada']
+    }
+  }
+};
+</script>
+<script src="assets/canvas.js"></script>
+</body>
+</html>
