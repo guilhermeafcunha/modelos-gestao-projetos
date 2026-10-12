@@ -45,11 +45,12 @@ button{font-family:inherit}
 /* ---------- Canvas genérico ---------- */
 .board{display:grid;gap:10px;padding:16px 20px 12px;min-height:calc(100vh - 100px)}
 .block{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:14px 12px 12px;
-  display:flex;flex-direction:column;min-width:0;position:relative;overflow:hidden}
+  display:flex;flex-direction:column;min-width:0;position:relative;overflow:hidden;container-type:inline-size}
 .block::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--c)}
 .bh{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+@container (max-width:190px){.bh .ico,.bh .cnt{display:none}.bh{gap:6px}}
 .bh .ico{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 16%,transparent);font-size:15px;flex:none}
-.bh h2{font-size:13.5px;margin:0;font-weight:650;flex:1;line-height:1.2;min-width:0;overflow-wrap:anywhere;hyphens:auto}
+.bh h2{font-size:13.5px;margin:0;font-weight:650;flex:1;line-height:1.2;min-width:0;overflow-wrap:break-word;hyphens:auto}
 .cnt{font-size:11px;color:var(--muted);background:var(--surface-2);border:1px solid var(--line);border-radius:99px;padding:1px 7px}
 .add{width:28px;height:28px;flex:none;border-radius:8px;border:1px dashed color-mix(in srgb,var(--c) 60%,var(--line));background:transparent;color:var(--c);font-size:18px;line-height:1;cursor:pointer}
 .add:hover{background:color-mix(in srgb,var(--c) 12%,transparent)}
