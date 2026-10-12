@@ -18,56 +18,56 @@ Kit de modelos para **Engenheiros de Produção** e **Gerentes de Projetos**, al
 
 ## Estrutura e catálogo
 
-Legenda: ✅ disponível · 🗓️ planejado
+🌐 **Navegar como site:** https://guilhermeafcunha.github.io/modelos-gestao-projetos/
 
 ### 01 – Iniciação
-| Modelo | Referência | Status |
-|---|---|---|
-| Business Case / Estudo de Viabilidade (VPL, TIR, payback) | PMBOK · ABEPRO Eng. Econômica | 🗓️ |
-| Termo de Abertura do Projeto (TAP / Project Charter) | PMBOK · PRINCE2 | 🗓️ |
-| Project Model Canvas | Finocchio | 🗓️ |
-| Registro de Stakeholders | PMBOK | 🗓️ |
-| Avaliação de Abordagem (preditiva × ágil × híbrida) | Agile Practice Guide · PMBOK 7 | 🗓️ |
+| Modelo | Referência |
+|---|---|
+| [Business Case / Estudo de Viabilidade (VPL, TIR, payback)](01-Iniciacao/business-case.md) | PMBOK · PRINCE2 · ABEPRO Eng. Econômica |
+| [Termo de Abertura do Projeto (TAP / Project Charter)](01-Iniciacao/termo-abertura-projeto.md) | PMBOK · PRINCE2 |
+| [Project Model Canvas](01-Iniciacao/project-model-canvas.md) | Finocchio |
+| [Registro de Stakeholders](01-Iniciacao/registro-stakeholders.md) | PMBOK |
+| [Avaliação de Abordagem (preditiva × ágil × híbrida)](01-Iniciacao/avaliacao-abordagem.md) | Agile Practice Guide · PMBOK 7 |
 
 ### 02 – Planejamento
-| Modelo | Referência | Status |
-|---|---|---|
-| Plano de Gerenciamento do Projeto (integrador) | PMBOK | 🗓️ |
-| Plano de Escopo + EAP/WBS + Dicionário da EAP | PMBOK | 🗓️ |
-| Plano de Cronograma (CPM, PERT, Gantt, Roadmap ágil) | PMBOK · Pesquisa Operacional | 🗓️ |
-| Plano de Custos + Orçamento + Curva S | PMBOK · Eng. Econômica | 🗓️ |
-| Plano de Qualidade (PDCA, CEP, 5W2H) | PMBOK · Eng. da Qualidade · ISO 9001 | 🗓️ |
-| Plano de Recursos + Matriz RACI | PMBOK · Eng. do Trabalho | 🗓️ |
-| Plano de Comunicações | PMBOK | 🗓️ |
-| **[Plano de Gerenciamento de Riscos](02-Planejamento/plano-gerenciamento-riscos.md)** | PMBOK · ISO 31000 | ✅ |
-| Plano de Aquisições / Suprimentos | PMBOK · Logística | 🗓️ |
-| **[Plano de Engajamento das Partes Interessadas](02-Planejamento/plano-engajamento-stakeholders.md)** | PMBOK · ISO 21502 | ✅ |
-| **[Plano de Gestão do Conhecimento](02-Planejamento/plano-gestao-conhecimento.md)** | PMBOK · ISO 30401 | ✅ |
-| Plano de Gerenciamento de Benefícios / OKRs | PMI · PRINCE2 | 🗓️ |
-| Plano de Sustentabilidade / ESG | ABEPRO Eng. da Sustentabilidade · ISO 14001 | 🗓️ |
-| Plano de Mudanças Organizacionais (ADKAR) | PMI · Prosci | 🗓️ |
-| Product Backlog / Definition of Done | Scrum Guide 2020 | 🗓️ |
+| Modelo | Referência |
+|---|---|
+| [Plano de Gerenciamento do Projeto (integrador)](02-Planejamento/plano-gerenciamento-projeto.md) | PMBOK · ISO 21502 |
+| [Plano de Escopo + EAP/WBS + Dicionário da EAP](02-Planejamento/plano-escopo-eap.md) | PMBOK · ABEPRO Eng. do Produto |
+| [Plano de Cronograma (CPM, PERT, Gantt, roadmap ágil)](02-Planejamento/plano-cronograma.md) | PMBOK · Pesquisa Operacional |
+| [Plano de Custos + Orçamento + Curva S](02-Planejamento/plano-custos.md) | PMBOK · Eng. Econômica |
+| [Plano de Qualidade (PDCA, CEP, 5W2H, CoQ)](02-Planejamento/plano-qualidade.md) | PMBOK · ISO 9001 · Eng. da Qualidade |
+| [Plano de Recursos + Matriz RACI](02-Planejamento/plano-recursos-raci.md) | PMBOK · Eng. do Trabalho |
+| [Plano de Comunicações](02-Planejamento/plano-comunicacoes.md) | PMBOK |
+| [Plano de Gerenciamento de Riscos](02-Planejamento/plano-gerenciamento-riscos.md) | PMBOK · ISO 31000 |
+| [Plano de Aquisições / Suprimentos](02-Planejamento/plano-aquisicoes.md) | PMBOK · Logística |
+| [Plano de Engajamento das Partes Interessadas](02-Planejamento/plano-engajamento-stakeholders.md) | PMBOK · ISO 21502 |
+| [Plano de Gestão do Conhecimento](02-Planejamento/plano-gestao-conhecimento.md) | PMBOK · ISO 30401 |
+| [Plano de Benefícios + OKRs](02-Planejamento/plano-beneficios-okr.md) | PMI BRM · PRINCE2 |
+| [Plano de Sustentabilidade / ESG](02-Planejamento/plano-sustentabilidade-esg.md) | ISO 14001 · ISO 45001 · ODS |
+| [Plano de Gestão de Mudanças Organizacionais (ADKAR)](02-Planejamento/plano-gestao-mudanca-organizacional.md) | PMI · Prosci · Kotter |
+| [Product Backlog + Definition of Ready / Done](02-Planejamento/product-backlog-dod.md) | Scrum Guide 2020 · SAFe 6.0 |
 
 ### 03 – Execução
-| Modelo | Status |
+| Modelo | Referência |
 |---|---|
-| Relatório de Status / Dashboard (EVM: CPI, SPI) | 🗓️ |
-| Ata de Reunião · Registro de Decisões | 🗓️ |
-| Registro de Questões (Issue Log) | 🗓️ |
+| [Relatório de Status (EVM: CPI, SPI)](03-Execucao/relatorio-status.md) | PMBOK · EVM |
+| [Ata de Reunião + Registro de Decisões](03-Execucao/ata-reuniao-decisoes.md) | PMBOK |
+| [Registro de Questões (Issue Log)](03-Execucao/registro-questoes.md) | PMBOK |
 
 ### 04 – Monitoramento e Controle
-| Modelo | Status |
+| Modelo | Referência |
 |---|---|
-| Solicitação e Log de Mudanças (CCB) | 🗓️ |
-| Análise de Valor Agregado | 🗓️ |
-| Auditoria de Qualidade / Riscos | 🗓️ |
+| [Solicitação + Log de Mudanças (CCB)](04-Monitoramento/solicitacao-log-mudancas.md) | PMBOK · PRINCE2 |
+| [Análise de Valor Agregado](04-Monitoramento/analise-valor-agregado.md) | PMI EVM · ANSI/EIA-748 |
+| [Auditoria de Qualidade e de Riscos](04-Monitoramento/auditoria-qualidade-riscos.md) | ISO 19011 · ISO 31000 |
 
 ### 05 – Encerramento
-| Modelo | Status |
+| Modelo | Referência |
 |---|---|
-| Termo de Aceite e Encerramento | 🗓️ |
-| Relatório de Lições Aprendidas / Retrospectiva | 🗓️ |
-| Avaliação de Benefícios Pós-projeto | 🗓️ |
+| [Termo de Aceite e Encerramento](05-Encerramento/termo-aceite-encerramento.md) | PMBOK · PRINCE2 |
+| [Relatório de Lições Aprendidas / Retrospectiva](05-Encerramento/relatorio-licoes-aprendidas.md) | PMBOK · ISO 30401 · AAR |
+| [Avaliação de Benefícios Pós-projeto](05-Encerramento/avaliacao-beneficios-pos-projeto.md) | PMI BRM |
 
 ---
 
